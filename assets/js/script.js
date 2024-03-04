@@ -53,18 +53,29 @@ for (let x = 0; x < team.length; x++)
 {
     const member = team[x];
     
-    screenEl.insertAdjacentHTML("beforeend",member.name);
-    screenEl.insertAdjacentHTML("beforeend", member.role);
+    //screenEl.insertAdjacentHTML("beforeend",member.name);
+    //screenEl.insertAdjacentHTML("beforeend", member.role);
     //screenEl.insertAdjacentHTML("beforeend", member.image);
     //orrible to see on page like this, but anyway let's go on
 
     //Bonus n.1:
     //transform the "string" about the photo in a real one.
-    screenEl.insertAdjacentHTML("beforeend" , `<img src="../assets/img/${member.image}" alt="">`);
+    //screenEl.insertAdjacentHTML("beforeend" , `<img src="../assets/img/${member.image}" alt="">`);
 };
-
-
-
 
 //Bonus n.2:
 //organize members in cards.
+let colEl = document.querySelector(".col-4");
+
+for (let x = 0; x < team.length; x++) {
+    const member = team[x];
+    colEl.insertAdjacentHTML("beforeend",
+    `<div class="card">
+        <img src="../assets/img/${member.image}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${member.name}</h5>
+            <p class="card-text">${member.role}</p>
+        </div>
+    </div `
+);
+};
