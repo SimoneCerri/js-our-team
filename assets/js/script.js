@@ -60,7 +60,7 @@ for (let x = 0; x < team.length; x++)
 
     //Bonus n.1:
     //transform the "string" about the photo in a real one.
-    screenEl.insertAdjacentHTML("beforeend" , `<img src="${member.image}" alt="">`);
+    screenEl.insertAdjacentHTML("beforeend" , `<img src="../assets/img/${member.image}" alt="">`);
 };
 
 
