@@ -65,17 +65,19 @@ for (let x = 0; x < team.length; x++)
 
 //Bonus n.2:
 //organize members in cards.
-let colEl = document.querySelector(".col-4");
+let rowEl = document.querySelector(".row");
 
 for (let x = 0; x < team.length; x++) {
     const member = team[x];
-    colEl.insertAdjacentHTML("beforeend",
-    `<div class="card">
-        <img src="../assets/img/${member.image}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${member.name}</h5>
-            <p class="card-text">${member.role}</p>
-        </div>
-    </div `
+    rowEl.insertAdjacentHTML("beforeend",
+    `<div class="col-4">
+        <div class="card mb-3">
+            <img src="../assets/img/${member.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${member.name}</h5>
+                <p class="card-text">${member.role}</p>
+            </div>
+        </div 
+    </div>`
 );
 };
