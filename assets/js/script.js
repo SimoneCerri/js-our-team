@@ -31,3 +31,24 @@ const team =
         image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
+
+//Milestone n.1:
+//LOG the single info about the name, role, photo.
+for (let x = 0; x < team.length; x++)
+{
+    const member = team[x];
+    //console.log(member.name , member.role , member.image);
+    console.log(member.name);
+    console.log(member.role);
+    console.log(member.image);
+}
+
+
+//Milestone n.2:
+//stamp on HTML same info.
+
+//Bonus n.1:
+//transform the "string" about the photo in a real one.
+
+//Bonus n.2:
+//organize members in cards.
