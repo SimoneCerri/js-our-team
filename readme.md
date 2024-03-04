@@ -14,3 +14,18 @@ trasformare la stringa foto in una immagine effettiva
 
 BONUS 2:
 organizzare i singoli membri in card/schede
+
+
+
+## ?Solution? ##
+- Milestone n.1:
+    - LOG the single info about the name, role, photo.
+
+- Milestone n.2:
+    - stamp on HTML same info.
+
+- Bonus n.1:
+    - transform the "string" about the photo in a real one.
+
+- Bonus n.2:
+    - organize members in cards.
