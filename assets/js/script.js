@@ -41,25 +41,30 @@ for (let x = 0; x < team.length; x++)
     console.log(member.name);
     console.log(member.role);
     console.log(member.image);
-}
+};
 
 
 //Milestone n.2:
 //stamp on HTML same info.
 let screenEl = document.querySelector(".on_screen");
+//let markupImg = `<img src="" alt="">` ;
+
 for (let x = 0; x < team.length; x++)
 {
     const member = team[x];
-    //console.log(member.name , member.role , member.image);
+    
     screenEl.insertAdjacentHTML("beforeend",member.name);
     screenEl.insertAdjacentHTML("beforeend", member.role);
-    screenEl.insertAdjacentHTML("beforeend", member.image);
+    //screenEl.insertAdjacentHTML("beforeend", member.image);
     //orrible to see on page like this, but anyway let's go on
-}
+
+    //Bonus n.1:
+    //transform the "string" about the photo in a real one.
+    screenEl.insertAdjacentHTML("beforeend" , `<img src="${member.image}" alt="">`);
+};
 
 
-//Bonus n.1:
-//transform the "string" about the photo in a real one.
+
 
 //Bonus n.2:
 //organize members in cards.
