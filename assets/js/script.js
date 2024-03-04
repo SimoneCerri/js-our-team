@@ -46,6 +46,17 @@ for (let x = 0; x < team.length; x++)
 
 //Milestone n.2:
 //stamp on HTML same info.
+let screenEl = document.querySelector(".on_screen");
+for (let x = 0; x < team.length; x++)
+{
+    const member = team[x];
+    //console.log(member.name , member.role , member.image);
+    screenEl.insertAdjacentHTML("beforeend",member.name);
+    screenEl.insertAdjacentHTML("beforeend", member.role);
+    screenEl.insertAdjacentHTML("beforeend", member.image);
+    //orrible to see on page like this, but anyway let's go on
+}
+
 
 //Bonus n.1:
 //transform the "string" about the photo in a real one.
